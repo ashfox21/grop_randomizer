@@ -1,0 +1,99 @@
+.generated-cards {
+    min-height: 100vh;
+
+    &__wrapper {
+        background-color: #00000051;
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+
+        min-height: 56px;
+        color: #fefdfde0;
+        gap: 30px;
+    }
+
+    &__title {
+        font-size: 26px;
+    }
+
+    &__quanity-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__quanity {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 0 6px;
+        height: 38px;
+        background-color: #fefdfd70;
+        background-color: #ebebebe9;
+        border-radius: 7px;
+        color: #132c3b;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    &__quanity button {
+        display: flex;
+        align-items: center;
+    }
+
+    &__quanity-minus img,
+    &__quanity-plus img {
+        width: 22px;
+        height: 22px;
+    }
+
+    &__quanity-minus img {
+        width: 18px;
+        height: 22px;
+    }
+    &__quanity-minus {
+        margin-right: 2px;
+        padding-left: 3px;
+    }
+
+    &__generate-btn {
+        display: flex;
+        gap: 0 8px;
+        align-items: center;
+        padding: 0 10px;
+        height: 38px;
+        background-color: #132c3b;
+        color: #ebebebe9;
+        border-radius: 7px;
+    }
+    &__generate-btn:hover {
+        color: #ebebeb;
+    }
+
+    &__export-table-btn {
+        display: flex;
+        gap: 0 8px;
+        align-items: center;
+        background-color: #ebebebe9;
+        border-radius: 7px;
+        color: #132c3b;
+        padding: 0 8px;
+        height: 38px;
+    }
+
+    &__export-table-btn:hover {
+        background-color: #ebebeb;
+    }
+
+
+}
+.groups {
+
+}
+.swiper {
+    background-color: transparent;
+}

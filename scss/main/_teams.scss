@@ -1,0 +1,119 @@
+.teams {
+    padding-top: 48px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px; /* 150% */
+    letter-spacing: -0.5px;
+    
+
+    &__inner {
+        background-color: #00000051;
+    }
+
+    &__managment {
+        display: flex;
+        align-items: center;
+        min-height: 56px;
+        color: #fefdfde0;
+        gap: 30px;
+    }
+
+    &__title {
+        margin-top: -4px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-size: 26px;
+    }
+
+    &__title img {
+        width: 26px;
+        height: 26px;
+        margin-top: 5px;
+    }
+
+    &__file {
+    }
+
+    &__instructions {
+        margin-top: 2px;
+        font-weight: 500;
+        color: #ebebebe9;
+    }
+
+    &__instructions:hover {
+        color: #ebebeb;
+    }
+
+    &__main-title {
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 70px; /* 109.375% */
+        letter-spacing: -0.5px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__groups-quanity {
+        display: flex;
+        align-items: center;
+        gap: 0 20px;
+    }
+
+    &__groups-input {
+        background-color: #fff;
+        border: 2px solid #000;
+        height: 33px;
+        padding: 3px 5px 0px;
+    }
+
+    &__cards {
+        // display: flex;
+        // overflow: auto;
+        background-color: transparent;
+        padding: 20px 20px 50px;
+        // display: flex;
+
+        // padding-left: 20px;
+    }
+}
+
+.input-file input[type="file"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.input-file {
+    background-color: #ebebebe9;
+    
+    height: 38px;
+    padding: 14px 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #132c3b;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.input-file:hover {
+    background-color: #ebebeb;
+}
+
+.input-file span {
+    margin-top: 2px;
+}
+
+.input-file img {
+width: 29px;
+}
+
+.swiper-wrapper {
+    padding-right: 100px;
+}
+

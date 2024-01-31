@@ -1,0 +1,36 @@
+.header {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    background-color: $color-main;
+    color: #fefdfddb;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+
+
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 48px;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 15px;
+        cursor: pointer;
+    }
+
+    &__logo img {
+        width: 30px;
+    }
+
+    &__faq {
+        cursor: pointer;
+    }
+}

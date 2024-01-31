@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <img src="images/backlog.png" alt="">
+                        <span>Генератор відбіркових груп</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <main class="main">
+            <section class="teams">
+
+                <div class="teams__inner">
+
+                    <div class="teams__managment container">
+                        <button class="teams__title">
+                            команди
+                        </button>
+
+                        <form method="post" enctype="multipart/form-data">
+                            <label class="input-file hiding">
+                                <input type="file" name="file" class="file-input" accept=".xlsx">
+                                <span class="input-file-text">Імпорт xlsx</span>
+                                <img src="images/xlsx.png" class="input-file-icon" alt="">
+                            </label>
+                        </form>
+                        <a class="teams__instructions hiding" href="#">формат таблиці</a>
+
+                        <div class="generated-cards__quanity-wrapper hiding" >
+                            <span>групи</span>
+                            <div class="generated-cards__quanity _generated-cards__quanity">
+                                <button class="generated-cards__quanity-minus _generated-cards__quanity-minus">
+                                    <img src="images/minus-sign.png" alt="">
+                                </button>
+                                <span class="_generated-cards__quanity-value">5</span>
+                                <button class="generated-cards__quanity-plus _generated-cards__quanity-plus">
+                                    <img src="images/plus-groups.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <button class="generated-cards__generate-btn _generated-cards__generate-btn hiding">
+                            generate
+                            <img src="images/random.png" alt="">
+                        </button>
+                    </div>
+
+
+                </div>
+
+
+                <div class="swiper _teams__swiper">
+                    <div class="teams__cards _teams__cards swiper-wrapper">
+                        <div class="card__get-new _card__get-new swiper-slide">
+                            <div class="card__get-new-inner _card__get-new-inner">
+                                <button class="card__get-new-title _card__get-new-title hiding get-new">
+                                    <span>Додати нову команду</span>
+                                    <img src="images/plus.png" alt="">
+                                </button>
+
+                                <div class="card__get-new-form _card__get-new-form hiding _hide">
+                                    <input id="newTeam" type="text"
+                                        class="card__get-new-input _card__get-new-input input"
+                                        placeholder="Назва команди">
+
+                                    <div class="card__get-new-buttons buttons-add-remove">
+                                        <button class="card__get-new-button-add _card__get-new-button-add add-button">
+                                            Додати команду
+                                        </button>
+
+                                        <button
+                                            class="card__get-new-button-remove _card__get-new-button-remove remove-button">
+                                            <img src="images/clear.png" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="teams__swiper-pagination"></div>
+                </div>
+
+            </section>
+
+            <section class="generated-cards hiding">
+                <div class="generated-cards__wrapper">
+                    <div class="generated-cards__header container _hide hiding">
+                        <h2 class="generated-cards__title">
+                            Створені групи
+                        </h2>
+    
+    
+    
+                        <div class="generated-cards__quanity-wrapper">
+                            <span>групи</span>
+                            <div class="generated-cards__quanity _generated-cards__quanity">
+                                <button class="generated-cards__quanity-minus _generated-cards__quanity-minus">
+                                    <img src="images/minus-sign.png" alt="">
+                                </button>
+                                <span class="_generated-cards__quanity-value">5</span>
+                                <button class="generated-cards__quanity-plus _generated-cards__quanity-plus">
+                                    <img src="images/plus-groups.png" alt="">
+                                </button>
+                                <!-- <input type="number" min="2" max="16" class="teams__groups-input" value="4"> -->
+                            </div>
+                        </div>
+    
+                        <button class="generated-cards__generate-btn _generated-cards__generate-btn">
+                            generate
+                            <img src="images/random.png" alt="">
+                        </button>
+    
+                        <button class="generated-cards__export-table-btn _export-table-btn">
+                            Завантажити групи
+                            <img src="images/xlsx.png" alt="">
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="swiper _groups__swiper">
+                    <div class="generated-cards__groups groups teams__cards _generated-cards__groups swiper-wrapper">
+                        
+                    </div>  
+
+                    <div class="groups__swiper-pagination"></div>
+                </div>
+
+
+                
+            </section>
+
+        </main>
+
+        <footer class="footer"></footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/generate-cards.js"></script>
+    <script src="js/xlsxProcessing/xlsx-read.js"></script>
+    <script src="js/xlsxProcessing/xlsx-write.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+</body>
+
+</html>

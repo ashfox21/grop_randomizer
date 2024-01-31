@@ -1,0 +1,318 @@
+.card {
+    width: auto;
+    margin-right: 20px;
+    &__inner {
+        width: 230px;
+        background-color: $color-main;
+        padding: 14px 8px 8px;
+        border-radius: 8px;
+
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: normal;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__color-line {
+        height: 4px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(181, 47, 47);
+    }
+
+    &__header {
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fefdfddb;
+
+        word-wrap: break-word;
+        width: 100%;
+    }
+
+    &__header p {
+        width: 70%;
+    }
+
+    &__team-name {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 6px;
+    }
+
+    &__edit-btn img,
+    &__delete-btn img {
+        width: 21px;
+    }
+
+    &__delete-btn img {
+    }
+
+    &__header-form {
+        margin-bottom: 10px;
+    }
+
+    &__header-input {
+    }
+
+    &__header-form-buttons {
+        display: flex;
+    }
+
+    &__header-button-rename {
+    }
+
+    &__header-button-remove {
+    }
+
+    &__member-list {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        max-height: 60vh;
+        overflow: auto;
+        gap: 8px;
+    }
+
+    &__member {
+        width: 100%;
+        min-height: 28px;
+        border-radius: 7px;
+        padding: 8px 35px 8px 18px;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        color: #000;
+        background-color: #fff;
+
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: normal;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+
+    &__member p {
+        display: block;
+        width: 100%;
+    }
+
+    &__member-delete-btn img {
+        width: 18px;
+    }
+    &__member-delete-btn {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: 28px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__member-color-line {
+        position: absolute;
+        height: 100%;
+        width: 10px;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+    }
+
+    &__new-member-btn {
+        background-color: $color-main;
+    }
+
+    &__new-member-form {
+    }
+
+    &__new-member-input {
+    }
+
+    &__new-member-buttons {
+        display: flex;
+    }
+
+    &__new-member-add {
+    }
+
+    &__new-member-remove {
+    }
+
+    &__get-new-inner {
+        background-color: $color-main;
+        padding: 8px;
+        border-radius: 8px;
+        width: 210px;
+    }
+    // кнопка новая команда
+    &__get-new {
+    }
+
+    &__get-new-inner {
+    }
+
+    &__get-new-title {
+        background-color: $color-main;
+    }
+    &__get-new-title._hide {
+        display: none;
+    }
+
+    &__get-new-form._hide {
+        display: none;
+    }
+
+    &__get-new-input {
+    }
+
+    &__get-new-button-add {
+    }
+
+    &__get-new-button-remove {
+    }
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background-color: #fefdfdb0;
+}
+
+// .card {
+//     padding: 10px;
+//     padding-top: 20px;
+//     width: 300px;
+//     border-radius: 10px;
+//     color: #fff;
+//     position: relative;
+//     overflow: hidden;
+
+//     &__header {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         width: 100%;
+
+//         margin-bottom: 10px;
+//     }
+
+//     &__header._hide {
+//         display: none;
+//     }
+
+//     &__buttons {
+//         height: 24px;
+//         display: flex;
+//         align-items: center;
+//         gap: 0 10px;
+//     }
+
+//     &__team-name {
+//     }
+
+//     &__edit-btn,
+//     &__delete-btn {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+//     &__edit-btn img {
+//         width: 20px;
+//     }
+
+//     &__delete-btn img {
+//         width: 20px;
+//     }
+
+//     &__member-list {
+//         display: flex;
+//         flex-direction: column;
+//         // margin-bottom: 10px;
+//     }
+
+//     &__member {
+//         background-color: #fff;
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         color: #000;
+//         padding: 0 20px;
+//         padding-right: 33px;
+//         min-height: 36px;
+//         width: 100%;
+//         border-radius: 5px;
+//         overflow: hidden;
+//         position: relative;
+//         margin-bottom: 10px;
+//         padding-top: 2px;
+//     }
+
+//     &__member img {
+//         position: absolute;
+//         right: 10px;
+//         top: 50%;
+//         transform: translateY(-50%);
+
+//     }
+
+//     &__member-color-line {
+
+//         position: absolute;
+//         left: 0;
+//         top: 0;
+//         height: 100%;
+//         width: 10px;
+//         background-color: red;
+//     }
+
+//     &__member-delete-btn {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//     }
+
+//     &__member-delete-btn img {
+//         width: 16px;
+//     }
+
+//     &__new-member-btn {
+//         display: flex;
+//         border-radius: 5px;
+//         color: #fff;
+//         padding: 0 2px;
+//         gap: 10px;
+//         align-items: center;
+//     }
+
+//     &__new-member-btn._hide, ._member-form-block._hide {
+//         display: none;
+//     }
+
+//     &__new-member-btn img {
+//         width: 18px;
+//     }
+// }
+
+// .card__color-line {
+//     background-color: red;
+//     position: absolute;
+//     width: 100%;
+//     height: 10px;
+//     top: 0;
+//     left: 0;
+// }

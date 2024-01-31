@@ -1,0 +1,83 @@
+
+.wrapper {
+    background-image: url(../images/34734.png);
+    background-size: 750px;
+}
+
+.main {
+    width: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 100px;
+    margin: 0 auto;
+}
+
+.input {
+    width: 100%;
+    height: 28px;
+    margin-bottom: 8px;
+    line-height: 14px;
+    font-size: 12px;
+    background-color: #fefdfd2a;
+    color: #fefdfdb8;
+    border-radius: 6px;
+    padding: 16px 12px;
+    outline: none;
+}
+
+.input::placeholder {
+    color: #fefdfd76;
+}
+.add-button,
+.remove-button {
+    height: 28px;
+    padding: 8px;
+    background-color: #fefdfd2a;
+    color: #fefdfdb8;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-add-remove {
+    display: flex;
+    align-items: center;
+    gap: 0 4px;
+}
+.add-button {
+}
+.remove-button {
+    background-color: transparent;
+}
+
+.remove-button img {
+    width: 22px;
+}
+
+.get-new {
+    height: 28px;
+    border-radius: 7px;
+    font-size: 14px;
+    background-color: $color-main;
+    color: #fefdfddb;
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+}
+.get-new img {
+    width: 17px;
+}
+
+.hiding._hide {
+    display: none;
+}
