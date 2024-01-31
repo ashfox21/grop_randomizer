@@ -30,5 +30,5 @@ function writeDataToXlsx(data) {
         return buf;
     }
 
-    saveAs(new Blob([s2ab(wbout)], { type: "application/octet-stream" }), 'отборочные группы.xlsx');
+    saveAs(new Blob([s2ab(wbout)], { type: "application/octet-stream" }), 'відбіркові групи.xlsx');
 }
