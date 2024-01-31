@@ -1,5 +1,4 @@
-// const exportGroupArr = require('../');TODO
-const createTebleBtn = document.querySelector(".export-table-btn");
+const createTebleBtn = document.querySelector("._export-table-btn");
 
 
 

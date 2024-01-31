@@ -1,6 +1,4 @@
 "use strict"
-
-
 // Работа счетчика
 const groupQuanityBlock = document.querySelectorAll("._generated-cards__quanity");
 groupQuanityBlock.forEach(el => el.addEventListener("click", event => {

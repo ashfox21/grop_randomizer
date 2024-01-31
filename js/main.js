@@ -306,7 +306,7 @@ function updateCardDetails() {
 
 function createMemberHtml(member, memberIndex) {
     return `
-        <li class="card__member _card__member _member-${memberIndex}">
+        <li class="card__member _member-${memberIndex} _card__member ">
             <p>${member}</p>
             <button class="card__member-delete-btn _card__member-delete-btn">
                 <img src="images/x-mark-black.png" alt="">
